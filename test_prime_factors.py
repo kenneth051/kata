@@ -1,6 +1,14 @@
 import unittest
 
 def prime_factors(number):
+    """method to get prime factors of a number
+    
+    Arguments:
+        number {int} -- input number to get its prime factors.
+    
+    Returns:
+        List -- [A list of prime factors.
+    """
     factors=[]
     
     #checks if the input is less than 2 then returns an empty list.
@@ -20,6 +28,7 @@ def prime_factors(number):
     return factors
     
 class TestPrimeFactors(unittest.TestCase):
+    """Prime factors test class"""
 
     def test_0(self):
         self.assertEquals(prime_factors(0), [])
