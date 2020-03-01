@@ -16,6 +16,16 @@ class Statement:
     def __init__(self):
         pass
 
+class TransactionHistory:
+    def __init__(self):
+        self.history = []
+
+    def add(self, transaction):
+        self.history.append(transaction)
+    
+    def get_transaction(self):
+        return self.history
+    
 
 class Account:
     def __init__(self,history, output=sys.stdout):
