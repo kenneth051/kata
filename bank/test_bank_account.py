@@ -11,7 +11,7 @@ class FakeOutput:
     def getValue(self):
         return self.text
 
-class TestBank(TestCase):
+class TestBankAccount(TestCase):
 
     @skip
     def test_bank_0(self):
@@ -67,6 +67,5 @@ class TestBank(TestCase):
         #assertions
         mock_account_statement.assert_called_with(transaction_history)
         test_account.output.write.assert_called_with(account_statement_mock)
-        
               
         

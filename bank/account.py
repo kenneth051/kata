@@ -10,12 +10,12 @@ class WithdrawMoney:
 
 class AddMoney:
     def __init__(self, amount,date,boy="hello"):
-        print(amount, date, boy)
         pass
 
 class Statement:
     def __init__(self):
         pass
+
 
 class Account:
     def __init__(self,history, output=sys.stdout):
