@@ -4,14 +4,29 @@ import io
 import sys
 from datetime import date
 
-class WithdrawMoney:
-    def __init__(self, amount, date):
-        pass
+class Transaction:
+    total = 0
+    def __init__(self,amount,date):
+        self.amount = amount
+        self.date = date
+        
+class WithdrawMoney(Transaction):
+    def __init__(self, amount,date):
+        super().__init__(amount,date)
+        Transaction.total -= amount
+    
+    def withdraw_money(self):
+        return [self.date,"",self.amount, Transaction.total]
+        
 
-class AddMoney:
-    def __init__(self, amount,date,boy="hello"):
-        pass
+class AddMoney(Transaction):
+    def __init__(self, amount,date):
+        super().__init__(amount,date)
+        Transaction.total += amount
 
+    def deposit_money(self):
+        return [self.date, self.amount,"", Transaction.total]
+        
 class Statement:
     def __init__(self):
         pass
@@ -34,11 +49,11 @@ class Account:
     
     def deposit(self, money):
         transaction = AddMoney(money, date.today())
-        self.history.add(transaction)
+        self.history.add(transaction.deposit_money())
 
     def withdraw(self, amount):
         transaction = WithdrawMoney(amount, date.today())
-        self.history.deduct(transaction)
+        self.history.deduct(transaction.withdraw_money())
     
     def printStatement(self):
         statement=Statement(self.history)

@@ -10,12 +10,12 @@ class TestTransactionHistory(TestCase):
 
     def test_add_transaction_history(self):
         transaction_history = account.TransactionHistory()
-        transaction_history.add("hello world")
-        self.assertEquals(transaction_history.history, ["hello world"])   
+        transaction_history.add(2000)
+        self.assertEquals(transaction_history.history, [2000])   
 
     def test_get_transaction_history(self):
         transaction_history = account.TransactionHistory()
-        transaction_history.add("oneworldcoders")
-        self.assertEquals(transaction_history.get_transaction(), ["oneworldcoders"])  
+        transaction_history.add(4000)
+        self.assertEquals(transaction_history.get_transaction(), [4000])  
         
-        
+     
