@@ -1,0 +1,26 @@
+{
+  "name": "book_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc --project tsconfig.json",
+    "compile:watch": "npm run compile -- --watch",
+    "test": "mocha -r ts-node/register tests/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "mocha-slow-reporter": "0.0.1"
+  }
+}
