@@ -1,1 +1,0 @@
-{"version":3,"file":"book_store.js","sourceRoot":"","sources":["../../tests/book_store.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;AAAA,2CAA6B;AAC7B,MAAM,MAAM,GAAG,IAAI,CAAC,MAAM,CAAC;AAE3B,QAAQ,CAAC,aAAa,EAAE;IACtB,EAAE,CAAC,aAAa,EAAE;QAChB,MAAM,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC;IACvB,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC"}
