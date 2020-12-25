@@ -36,4 +36,3 @@ class DepositMoney(TestCase):
     #     account.deposit(1000)
     #     account.withdraw(1000)
     #     self.assertEquals(account.printStatement(), [])
-

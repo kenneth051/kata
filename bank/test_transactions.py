@@ -17,4 +17,3 @@ class TestTransactionHistory(TestCase):
         transaction_history = account.TransactionHistory()
         transaction_history.add(4000)
         self.assertEquals(transaction_history.history, [4000])
-

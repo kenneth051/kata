@@ -70,4 +70,3 @@ class TestBankAccount(TestCase):
         # assertions
         mock_account_statement.assert_called_with(transaction_history)
         test_account.output.write.assert_called_with(print_statement)
-

@@ -9,4 +9,3 @@ class TestStatement(TestCase):
         transaction_history.history.return_value = []
         statement = Statement(transaction_history.history.return_value)
         self.assertEquals(statement.__str__(), "Date| Credit | Debit | Balance\n")
-

@@ -67,4 +67,3 @@ class Account:
         statement = Statement(self.history.history)
         data = statement.__str__()
         self.output.write(data)
-
